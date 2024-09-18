@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
     schedule:
-        - cron: "0 0,6,12 * * *"
+        - cron: "22 2 * * *"
     workflow_dispatch:
 
 jobs:
@@ -26,5 +26,5 @@ jobs:
             - name: Push to GitHub
               uses: EndBug/add-and-commit@v7.2.1
               with:
-                  branch: master
+                  branch: main
                   message: "Generate Contribution Snake"
